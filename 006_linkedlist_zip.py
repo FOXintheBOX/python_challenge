@@ -28,7 +28,6 @@ for info in infos:
         linked_list[key] = value
 
 end_of_list = False
-
 address = "90052"
 out_str = ""
 while not end_of_list:
