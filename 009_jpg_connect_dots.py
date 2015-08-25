@@ -1,3 +1,7 @@
+#from graphics import *
+#win = GraphWin()
+
+import matplotlib.pyplot as plt
 
 
 """
@@ -31,6 +35,24 @@ second = [156,141,165,135,169,131,176,130,187,134,191,140,191,146,186,150,179,15
 125,217,119,209,116,196,115,185,114,172,114,167,112,161,109,165,107,170,99,171,97,167,89,164,81,162,
 77,155,81,148,87,140,96,138,105,141,110,136,111,126,113,129,118,117,128,114,137,115,146,114,155,115,
 158,121,157,128,156,134,157,136,156,136]
+
+first_x = [j for i,j in enumerate(first) if i % 2 == 0]
+first_y = [500-j for i,j in enumerate(first) if i % 2 != 0]
+
+second_x = [j for i,j in enumerate(second) if i % 2 == 0]
+second_y = [500-j for i,j in enumerate(second) if i % 2 != 0]
+
+all_x = first_x + second_x
+all_y = first_y + second_y
+print first_x
+print all_y
+#plt.scatter(first_x, first_y)
+#plt.scatter(second_x, second_y)
+plt.scatter(all_x,all_y)
+
+
+plt.show()
+
 
 print len(first)
 print len(second)
